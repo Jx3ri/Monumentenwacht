@@ -1,9 +1,3 @@
-<?php
-if (isset($_GET['id'])){
-    $datum = $_GET['datum'];
-    $tijd = $_GET['tijd'];
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,14 +24,18 @@ $hour = date('H', time());
         echo "<h1>Goedemorgen!</h1>";
     } else
     
-    if ($hour >= "12" && $time < "17") {
+    if ($hour >= "12" && $hour < "17") {
         echo "<h1>Prettige namiddag!</h1>";
+        echo $datum;
     } else
     
-    if ($hour >= "17" && $time >= "19") {
+    if ($hour >= "17" && $hour >= "19") {
         echo "<h1>Goedenavond!</h1>";
     }
-    echo "<h1>Is het OK dat wij op inspectie komen op  om 'X' uur?</h1>";
+
+    if(isset($_GET['id']) && !empty($_GET['flddatum']) && !empty($_GET['fldtijd'])){
+    }
+    echo "<h1>Is het OK dat wij op  inspectie komen op X om Y uur?</h1>";
 ?>
 <br>
 <br>
