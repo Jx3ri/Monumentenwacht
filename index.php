@@ -17,7 +17,11 @@ if (isset($_GET['id'])){
 <body>
 <div class="center">
 <!-- Het logo -->
-<img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht">
+    <div class="logo-container">
+        <img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht">
+    </div>
+    
+    <div class="info-container">
 <?php
 date_default_timezone_set('Europe/Amsterdam');
 $hour = date('H', time());
@@ -38,12 +42,12 @@ $hour = date('H', time());
     }
     echo "<h1>Is het OK dat wij op inspectie komen op  om 'X' uur?</h1>";
 ?>
-<br>
-<br>
-<br>
-<br>
-<a href="#" class="btn btn-5">Akkoord</a>
-<a href="#" class="btn btn-5">Liever niet</a>
+    </div>
+
+    <div class="btn-container">
+        <a href="#" class="btn btn-5">Ja</a>
+        <a href="#" class="btn btn-5">Nee</a>
+    </div>
 </div>
 
 </body>
