@@ -1,10 +1,7 @@
 <?php
 if (isset($_GET['id'])){
-    $id = bindParam('id', $_GET['id']);
-    $datum = bindParam('datum', $_GET['datum']);
-    $uur = bindParam('uur', $_GET['uur']);
-    $minuut = bindParam('minuut', $_GET['minuut']);
-
+    $datum = $_GET['datum'];
+    $tijd = $_GET['tijd'];
 }
 ?>
 <!DOCTYPE html>
@@ -20,7 +17,7 @@ if (isset($_GET['id'])){
 <body>
 <div class="center">
 <!-- Het logo -->
-<img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Girl in a jacket">
+<img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht">
 <?php
 date_default_timezone_set('Europe/Amsterdam');
 $hour = date('H', time());
@@ -38,9 +35,8 @@ $hour = date('H', time());
     
     if ($hour >= "17" && $time >= "19") {
         echo "<h1>Goedenavond!</h1>";
-    } else
-
-echo "<h1>Is het OK dat wij op inspectie komen op 'X' om 'X' uur?</h1>"
+    }
+    echo "<h1>Is het OK dat wij op inspectie komen op  om 'X' uur?</h1>";
 ?>
 <br>
 <br>
