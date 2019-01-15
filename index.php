@@ -15,9 +15,10 @@ if (isset($_GET['id'])){
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext">
 </head>
 <body>
+
 <div class="center">
 <!-- Het logo -->
-<img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht">
+<a href="https://mwnb.nl/"><img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht"></a>
 <?php
 date_default_timezone_set('Europe/Amsterdam');
 $hour = date('H', time());
