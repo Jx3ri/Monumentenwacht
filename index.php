@@ -1,3 +1,9 @@
+<?php
+ if (isset($_GET['id']) && isset($_GET['datum']) && isset($_GET['tijd'])){
+    $datum = $_GET['datum'];
+    $tijd = $_GET['tijd'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +20,7 @@
 <!-- Het logo -->
 <a href="https://mwnb.nl/"><img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht"></a>
 <?php
+
 date_default_timezone_set('Europe/Amsterdam');
 $hour = date('H', time());
     
@@ -32,10 +39,7 @@ $hour = date('H', time());
     if ($hour >= "17" && $hour >= "19") {
         echo "<h1>Goedenavond!</h1>";
     }
-
-    if(isset($_GET['id']) && !empty($_GET['flddatum']) && !empty($_GET['fldtijd'])){
-    }
-    echo "<h1>Is het OK dat wij op  inspectie komen op X om Y uur?</h1>";
+    echo "<h1>Is het OK dat wij op  inspectie komen op ".$datum." om ".$tijd." uur?</h1>";
 ?>
 <br>
 <br>
