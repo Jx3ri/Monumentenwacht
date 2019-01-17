@@ -33,7 +33,6 @@ $hour = date('H', time());
     
     if ($hour >= "12" && $hour < "17") {
         echo "<h1>Prettige namiddag!</h1>";
-        echo $datum;
     } else
     
     if ($hour >= "17" && $hour >= "19") {
