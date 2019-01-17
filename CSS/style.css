@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -105,7 +106,7 @@ p a:hover {
   margin-top: 500000px;
   color: #fff;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 45px;
   margin: 0 0 2em;
@@ -148,6 +149,23 @@ p a:hover {
   color: #e30033;
 }
 
+.btn-container {
+  margin-top: 5%;
+  width: 100%;
+  position: absolute;
+}
+
+.logo-container {
+  margin-top: 2%;
+  width: 100%;
+  position: relative;
+}
+
+.info-container {
+  width: 100%;
+  position: relative;
+}
+
 .center{
   text-align: center;
 }
@@ -156,4 +174,7 @@ p a:hover {
 .logo{
   height: 10%;
   width: 10%;
+}
+.red{
+  color: #e02b20;
 }
