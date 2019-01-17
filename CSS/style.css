@@ -169,11 +169,16 @@ p a:hover {
 }
 
 .logo-container {
-  transition: transform .2s;
   margin-top: 2%;
   margin-bottom: 2%;
   width: 100%;
   position: relative;
+}
+img .logo{
+  transition: transform 0.2s;
+}
+img:hover{
+  transform: scale(1.25);
 }
 
 .info-container {
