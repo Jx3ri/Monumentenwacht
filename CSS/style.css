@@ -181,11 +181,6 @@ p a:hover {
   position: relative;
 }
 
-img .logo {
-  width: 300px;
-  height: 300px;
-}
-
 img .logo{
   transition: transform 0.2s;
 }
