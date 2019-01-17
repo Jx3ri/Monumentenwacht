@@ -44,8 +44,8 @@ $hour = date('H', time());
 ?>
 </div>
     <div class="button-container">
-        <a href="#" class="btn btn-5">Akkoord</a>
-        <a href="#" class="btn btn-5">Liever niet</a>
+        <a href="#" class="btn btn-5">Ja</a>
+        <a href="#" class="btn btn-5">Nee</a>
     </div>
 </div>
 
