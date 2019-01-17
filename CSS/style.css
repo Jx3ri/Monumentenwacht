@@ -162,7 +162,7 @@ p a:hover {
   transform: translate(0.4rem, -50%);
 }
 
-.btn-container {
+.button-container {
   margin-top: 5%;
   width: 100%;
   position: absolute;
@@ -170,6 +170,7 @@ p a:hover {
 
 .logo-container {
   margin-top: 2%;
+  margin-bottom: 2%;
   width: 100%;
   position: relative;
 }

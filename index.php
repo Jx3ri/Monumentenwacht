@@ -18,7 +18,9 @@
 
 <div class="center">
 <!-- Het logo -->
-<a href="https://mwnb.nl/"><img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht"></a>
+<div class="logo-container"><a href="https://mwnb.nl/"><img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht"></a></div>
+
+<div class="time-container">
 <?php
 
 date_default_timezone_set('Europe/Amsterdam');
@@ -40,13 +42,11 @@ $hour = date('H', time());
     }
     echo "<h1>Is het OK dat wij op  inspectie komen op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span> uur?</h1>";
 ?>
-
-<br>
-<br>
-<br>
-<br>
-<a href="#" class="btn btn-5">Akkoord</a>
-<a href="#" class="btn btn-5">Liever niet</a>
+</div>
+    <div class="button-container">
+        <a href="#" class="btn btn-5">Akkoord</a>
+        <a href="#" class="btn btn-5">Liever niet</a>
+    </div>
 </div>
 
 </body>
