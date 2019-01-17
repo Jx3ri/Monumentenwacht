@@ -114,14 +114,12 @@ p a:hover {
 }
 
 .btn {
-  margin-top: 500000px;
   color: #fff;
   cursor: pointer;
   font-size: 24px;
   font-weight: 400;
   line-height: 45px;
   margin: 0 0 2em;
-  max-width: 160px;
   position: relative;
   text-decoration: none;
   padding: 1.1em;
@@ -182,6 +180,11 @@ p a:hover {
   width: 100%;
   position: relative;
 }
+
+img .logo {
+  transform: scale(1.25);
+}
+
 img .logo{
   transition: transform 0.2s;
 }
