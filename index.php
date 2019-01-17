@@ -1,8 +1,8 @@
 <?php
-if (isset($_GET['id'])){
+ if (isset($_GET['id']) && isset($_GET['datum']) && isset($_GET['tijd'])){
     $datum = $_GET['datum'];
     $tijd = $_GET['tijd'];
-}
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,38 +15,38 @@ if (isset($_GET['id'])){
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext">
 </head>
 <body>
+
 <div class="center">
 <!-- Het logo -->
-    <div class="logo-container">
-        <img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht">
-    </div>
-    
-    <div class="info-container">
+<a href="https://mwnb.nl/"><img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht"></a>
 <?php
+
 date_default_timezone_set('Europe/Amsterdam');
 $hour = date('H', time());
     
     $hour = date("H");
     
+
     if ($hour < "12") {
         echo "<h1>Goedemorgen!</h1>";
     } else
     
-    if ($hour >= "12" && $time < "17") {
+    if ($hour >= "12" && $hour < "17") {
         echo "<h1>Prettige namiddag!</h1>";
     } else
     
-    if ($hour >= "17" && $time >= "19") {
+    if ($hour >= "17" && $hour >= "19") {
         echo "<h1>Goedenavond!</h1>";
     }
-    echo "<h1>Is het OK dat wij op inspectie komen op  om " . $hour . " uur?</h1>";
+    echo "<h1>Is het OK dat wij op  inspectie komen op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span> uur?</h1>";
 ?>
-    </div>
 
-    <div class="btn-container">
-        <a href="#" class="btn btn-5">Ja</a>
-        <a href="#" class="btn btn-5">Nee</a>
-    </div>
+<br>
+<br>
+<br>
+<br>
+<a href="#" class="btn btn-5">Akkoord</a>
+<a href="#" class="btn btn-5">Liever niet</a>
 </div>
 
 </body>
