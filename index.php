@@ -18,7 +18,7 @@
 
 <div class="center">
 <!-- Het logo -->
-<div class="logo-container"><a href="https://mwnb.nl/"><img class='logo' src="Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht"></a></div>
+<div class="logo-container"><a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_icon_DEF_transparant.png" alt="Logo monumentenwacht"></a></div>
 
 <div class="time-container">
 <?php

@@ -169,6 +169,7 @@ p a:hover {
 }
 
 .logo-container {
+  transition: transform .2s;
   margin-top: 2%;
   margin-bottom: 2%;
   width: 100%;
