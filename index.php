@@ -28,7 +28,6 @@ $hour = date('H', time());
     
     $hour = date("H");
     
-
     if ($hour < "12") {
         echo "<h1>Goedemorgen!</h1>";
     } else
@@ -40,7 +39,7 @@ $hour = date('H', time());
     if ($hour >= "17" && $time >= "19") {
         echo "<h1>Goedenavond!</h1>";
     }
-    echo "<h1>Is het OK dat wij op inspectie komen op  om 'X' uur?</h1>";
+    echo "<h1>Is het OK dat wij op inspectie komen op  om " . $hour . " uur?</h1>";
 ?>
     </div>
 
