@@ -182,7 +182,8 @@ p a:hover {
 }
 
 img .logo {
-  transform: scale(1.25);
+  width: 300px;
+  height: 300px;
 }
 
 img .logo{
