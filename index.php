@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="CSS\style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="JS/main.js"></script>
 </head>
 <body>
 
@@ -28,7 +30,8 @@ date_default_timezone_set('Europe/Amsterdam');
 $hour = date('H', time());
     
     $hour = date("H");
-    
+    $datum = date("Y/m/d");
+    $tijd = date("m");
 
     if ($hour < "12") {
         echo "<h1>Goedemorgen!</h1>";
@@ -46,7 +49,13 @@ $hour = date('H', time());
 </div>
     <div class="button-container">
         <a href="#" class="btn btn-5">Ja</a>
-        <a href="#" class="btn btn-5">Nee</a>
+        <a href="#" class="btn btn-5" onclick="popupOn()">Nee</a>
+    </div>
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-center">
+        <i class="fas fa-times popup-close popup-hover" onclick="popupOff()"></i>
     </div>
 </div>
 
