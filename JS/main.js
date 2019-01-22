@@ -1,7 +1,7 @@
-function popupOn() {
-    document.getElementById("popup").style.display = "block";
+function on() {
+    document.getElementById("overlay").style.display = "block";
 }
 
-function popupOff() {
-    document.getElementById("popup").style.display = "none";
+function off() {
+    document.getElementById("overlay").style.display = "none";
 }
