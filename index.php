@@ -44,7 +44,7 @@ $hour = date('H', time());
     if ($hour >= "17" && $hour >= "19") {
         echo "<h1>Goedenavond!</h1>";
     }
-    echo "<h1>Is het OK dat wij op  inspectie komen op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span>?</h1>";
+    echo "<h1>Wilt u een afspraak maken met de Monumentenwacht op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span> uur?</h1>";
 ?>
 
 </div>
@@ -57,6 +57,9 @@ $hour = date('H', time());
 <div class="popup">
     <div class="popup-center">
         <i class="fas fa-times popup-close popup-hover" onclick="popupOff()"></i>
+        <div class="center">
+        <div class="logo-container"><a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a></div>
+        </div>
     </div>
 </div>
 
