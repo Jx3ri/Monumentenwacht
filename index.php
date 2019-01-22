@@ -58,6 +58,9 @@ $hour = date('H', time());
         <i class="fas fa-times popup-close popup-hover" onclick="popupOff()"></i>
         <div class="center">
         <div class="logo-container"><a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a></div>
+        <form action="submit.php">
+
+        </form>
         </div>
     </div>
 </div>
