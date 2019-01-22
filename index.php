@@ -50,22 +50,16 @@ $hour = date('H', time());
 </div>
     <div class="button-container">
         <a href="#" class="btn btn-5">Ja</a>
-        <a href="#" class="btn btn-5" onclick="popupOn()">Nee</a>
+        <a href="#" class="btn btn-5" onclick="on()">Nee</a>
     </div>
 </div>
 
-<div class="popup">
-    <div class="popup-center">
-        <i class="fas fa-times popup-close popup-hover" onclick="popupOff()"></i>
-        <div class="center">
-        <div class="logo-container"><a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a></div>
-        <form action="submit.php">
-
-        </form>
-        </div>
-    </div>
+<div id="overlay">
+  <div id="overlay-container">
+      <i class="fas fa-times popup-close" onclick="off()"></i>
+      <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
+  </div>
 </div>
-
 
 </body>
 </html>
