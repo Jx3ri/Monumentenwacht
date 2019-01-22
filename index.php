@@ -46,6 +46,7 @@ $hour = date('H', time());
     }
     echo "<h1>Is het OK dat wij op  inspectie komen op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span>?</h1>";
 ?>
+
 </div>
     <div class="button-container">
         <a href="#" class="btn btn-5">Ja</a>
@@ -53,11 +54,12 @@ $hour = date('H', time());
     </div>
 </div>
 
-<div class="popup" id="popup">
+<div class="popup">
     <div class="popup-center">
         <i class="fas fa-times popup-close popup-hover" onclick="popupOff()"></i>
     </div>
 </div>
+
 
 </body>
 </html>
