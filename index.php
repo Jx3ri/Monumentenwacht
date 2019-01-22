@@ -55,10 +55,10 @@ $hour = date('H', time());
 </div>
 
 <div id="overlay">
-  <div id="overlay-container">
-      <i class="fas fa-times popup-close" onclick="off()"></i>
-      <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a> 
-  </div>
+    <div id="overlay-container">
+        <i class="fas fa-times popup-close" onclick="off()"></i>
+        <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
+    </div>
 </div>
 
 </body>
