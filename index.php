@@ -12,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Afspraak maken | Noord-Brabant </title>
     <link rel="stylesheet" href="CSS\style.css">
+    <link rel="stylesheet" href="CSS\formstyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -58,6 +59,12 @@ $hour = date('H', time());
     <div id="overlay-container">
         <i class="fas fa-times popup-close" onclick="off()"></i>
         <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
+        <form action="submit.php">
+        <label for="NieuweDatum">Datum die jij voorstelt</label>
+        <input type="text" name="NieuweDatum" id="NieuweDatum" placeholder='Datum'>
+        <label for="NieuweTijd">Tijdstip dat jij voorstelt</label>
+        <input type="text" name="NieuweTijd" id="NieuweTijd" placeholder='Tijd'>
+        </form>
     </div>
 </div>
 
