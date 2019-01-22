@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="JS/main.js"></script>
+    <script src="JS/datepicker.js"></script>
 </head>
 <body>
 
@@ -61,7 +65,7 @@ $hour = date('H', time());
         <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
         <form action="submit.php">
         <label for="NieuweDatum">Datum die jij voorstelt</label>
-        <input type="text" name="NieuweDatum" id="NieuweDatum" placeholder='Datum'>
+        <input type="text" name="NieuweDatum" id="datepicker" placeholder='Datum'>
         <label for="NieuweTijd">Tijdstip dat jij voorstelt</label>
         <input type="text" name="NieuweTijd" id="NieuweTijd" placeholder='Tijd'>
         </form>
