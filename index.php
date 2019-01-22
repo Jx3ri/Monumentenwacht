@@ -34,15 +34,15 @@ $hour = date('H', time());
     $tijd = date("m");
 
     if ($hour < "12") {
-        echo "<h1>Goedemorgen!</h1>";
+        echo "<h1>Goedemorgen</h1>";
     } else
     
     if ($hour >= "12" && $hour < "17") {
-        echo "<h1>Prettige namiddag!</h1>";
+        echo "<h1>Prettige namiddag</h1>";
     } else
     
     if ($hour >= "17" && $hour >= "19") {
-        echo "<h1>Goedenavond!</h1>";
+        echo "<h1>Goedenavond</h1>";
     }
     echo "<h1>Wilt u een afspraak maken met de Monumentenwacht op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span> uur?</h1>";
 ?>
@@ -57,7 +57,7 @@ $hour = date('H', time());
 <div id="overlay">
   <div id="overlay-container">
       <i class="fas fa-times popup-close" onclick="off()"></i>
-      <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
+      <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a> 
   </div>
 </div>
 
