@@ -30,7 +30,7 @@
 
 <div class="time-container">
 <?php
-
+ 
 date_default_timezone_set('Europe/Amsterdam');
 $hour = date('H', time());
     
