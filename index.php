@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- De mail wordt verzonden vanuit planningoverzicht -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,8 +20,11 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
     <script src="JS/main.js"></script>
     <script src="JS/datepicker.js"></script>
+    <script src="JS/timepicker.js"></script>
 </head>
 <body>
 
@@ -67,7 +71,7 @@ $hour = date('H', time());
         <label for="NieuweDatum">Datum die jij voorstelt</label>
         <input type="text" name="NieuweDatum" id="datepicker" placeholder='Datum'>
         <label for="NieuweTijd">Tijdstip dat jij voorstelt</label>
-        <input type="text" name="NieuweTijd" id="NieuweTijd" placeholder='Tijd'>
+        <input type="text" name="NieuweTijd" class='timepicker' id="NieuweTijd" placeholder='Tijd'>
         </form>
     </div>
 </div>
