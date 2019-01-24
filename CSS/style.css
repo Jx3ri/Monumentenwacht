@@ -188,9 +188,10 @@ img:hover{
   transform: scale(1.1);
 }
 
-.info-container {
+.time-container {
   width: 100%;
   position: relative;
+  padding: 0 2%;
 }
 
 .center{
