@@ -4,6 +4,6 @@ $( function() {
     dateFormat: 'yy-mm-dd',
     changeMonth: true,
     changeYear: true,
-    minDate: dateToday
+    minDate: 1
   });
 } );

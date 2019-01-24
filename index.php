@@ -71,7 +71,8 @@ $hour = date('H', time());
         echo "Wilt u een afspraak maken met de Monumentenwacht op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span> uur?";
         echo "</span>";
         ?>
-        <a href="#" class="btn btn-form btn-5">Voorstellen</a>
+        <a href="#" class="btn btn-form btn-5">Bevestigen</a>
+        <a href="#" class="btn btn-form btn-5">Terug</a>
     </div>
 </div>
 
