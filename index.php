@@ -72,6 +72,7 @@ $hour = date('H', time());
         <input type="text" name="NieuweDatum" id="datepicker" placeholder='Datum'>
         <label for="NieuweTijd">Tijdstip dat jij voorstelt:</label>
         <input type="text" name="NieuweTijd" class='timepicker' id="NieuweTijd" placeholder='Tijd'>
+        <a href="#" class="btn btn-5">Verstuur</a>
         </div>
         </form>
     </div>
