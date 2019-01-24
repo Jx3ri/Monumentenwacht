@@ -129,6 +129,15 @@ p a:hover {
   text-transform: uppercase!important;
 }
 
+.btn-form {
+  color: #DDCCAA!important;
+  width: auto;
+  padding: 0.3em;
+  font-size: 14px;
+  font-weight: 700!important;
+  letter-spacing: 4px;
+}
+
 @media (min-width: 600px) {
   .btn {
     margin: 0 1em 2em;
@@ -139,13 +148,18 @@ p a:hover {
 }
 
 .btn-5 {
-  color: #2a2a2a!important;
+  color: #2a2a2a;
   margin-top: 1em;
   border: 2px solid;
   border-color: #DDCCAA;
   letter-spacing: 4px;
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-form:after {
+  color: #DDCCAA!important;
+  font-weight: 700!important;
 }
 
 .btn-5:after {
@@ -160,7 +174,7 @@ p a:hover {
   opacity: 0;
 }
 .btn-5:hover, .btn-5:focus {
-  padding-right: 3rem;
+  padding-right: 2.8rem;
 }
 .btn-5:hover:after, .btn-5:focus:after {
   opacity: 1;
