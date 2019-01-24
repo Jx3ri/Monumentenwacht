@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('input.timepicker').timepicker({
-        timeFormat: 'hh:mm',
+        timeFormat: 'HH:mm',
+        dropdown: false,
     });
 });
