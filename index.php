@@ -68,10 +68,12 @@ $hour = date('H', time());
         <i class="fas fa-times popup-close" onclick="off()"></i>
         <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
         <form action="submit.php">
-        <label for="NieuweDatum">Datum die jij voorstelt</label>
+        <div class="center">
+        <label for="NieuweDatum">Datum die jij voorstelt:</label>
         <input type="text" name="NieuweDatum" id="datepicker" placeholder='Datum'>
-        <label for="NieuweTijd">Tijdstip dat jij voorstelt</label>
+        <label for="NieuweTijd">Tijdstip dat jij voorstelt:</label>
         <input type="text" name="NieuweTijd" class='timepicker' id="NieuweTijd" placeholder='Tijd'>
+        </div>
         </form>
     </div>
 </div>
