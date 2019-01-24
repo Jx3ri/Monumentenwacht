@@ -1,3 +1,24 @@
-label{
+input {
     font-size: 0.3em;
+    outline: 0;
+    border: 0;
+    display: block;
+    margin: 1.5% auto;
+    padding: 2%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.12);
+}
+
+label{
+    font-size: 0.4em;
+    margin: 1.5%;
+    display: block;
+}
+
+.form-date {
+    padding: 0 2%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
