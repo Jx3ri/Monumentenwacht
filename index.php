@@ -7,7 +7,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- De mail wordt verzonden vanuit planningoverzicht -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -58,14 +57,27 @@ $hour = date('H', time());
 
 </div>
     <div class="button-container">
-        <a href="#" class="btn btn-5">Ja</a>
-        <a href="#" class="btn btn-5" onclick="on()">Nee</a>
+        <a href="#" class="btn btn-5" onclick="ConfirmOn()">Ja</a>
+        <a href="#" class="btn btn-5" onclick="VoorstelOn()">Nee</a>
     </div>
 </div>
 
-<div id="overlay">
+<div id="overlay1">
     <div id="overlay-container">
-        <i class="fas fa-times popup-close" onclick="off()"></i>
+        <i class="fas fa-times popup-close" onclick="ConfirmOff()"></i>
+        <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
+        <?php
+        echo "<span>";
+        echo "Wilt u een afspraak maken met de Monumentenwacht op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span> uur?";
+        echo "</span>";
+        ?>
+        <a href="#" class="btn btn-form btn-5">Voorstellen</a>
+    </div>
+</div>
+
+<div id="overlay2">
+    <div id="overlay-container">
+        <i class="fas fa-times popup-close" onclick="VoorstelOff()"></i>
         <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
         <form class="form-date" action="submit.php">
         <label for="NieuweDatum">Datum die jij voorstelt</label>
