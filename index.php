@@ -27,6 +27,7 @@
 </head>
 <body>
 
+<div class="center-container">
 <div class="center cover">
 <!-- Het logo -->
 <div class="logo-container"><a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a></div>
@@ -94,6 +95,8 @@ $hour = date('H', time());
         </div>
         </form>
     </div>
+</div>
+
 </div>
 
 </body>
