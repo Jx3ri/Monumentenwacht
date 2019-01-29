@@ -71,7 +71,7 @@ $hour = date('H', time());
         <div class="time-container confirm-container">
         <?php
         echo "<span class='confirm-text'>";
-        echo "Wilt u een afspraak maken met de Monumentenwacht op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span> uur?";
+        echo "Bent u zeker dat u een afspraak wilt maken met de Monumentenwacht op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span> uur?";
         echo "</span>";
         ?>
         </div>
@@ -87,13 +87,14 @@ $hour = date('H', time());
         <i class="fas fa-times popup-close" onclick="VoorstelOff()"></i>
         <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
         <form class="form-date" action="submit.php">
-        <label for="NieuweDatum">Datum die jij voorstelt:</label>
-        <input type="text" name="NieuweDatum" id="datepicker" placeholder='Datum'>
-        <label for="NieuweTijd">Tijdstip dat jij voorstelt:</label>
-        <input type="text" name="NieuweTijd" class='timepicker' id="NieuweTijd" placeholder='Tijd'>
-        <a href="#" class="btn btn-form btn-5">Voorstellen</a>
-        </div>
+            <label for="NieuweDatum">Datum die jij voorstelt:</label>
+            <input type="text" name="NieuweDatum" id="datepicker" placeholder='Datum'>
+            <label for="NieuweTijd">Tijdstip dat jij voorstelt:</label>
+            <input type="text" name="NieuweTijd" class='timepicker' id="NieuweTijd" placeholder='Tijd'>
+            <a href="#" class="btn btn-form btn-5">Voorstellen</a>
         </form>
+    </div>
+        
     </div>
 </div>
 
