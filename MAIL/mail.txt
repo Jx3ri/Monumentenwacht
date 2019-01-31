@@ -1,0 +1,26 @@
+Geachte mevrouw, heer
+
+Volgens onze gegevens is uw monument, [Parent.straat] [Parent.Postcode]
+[Parent.Gemeente], toe aan een periodieke bouwkundige inspectie.
+Om deze werkzaamheden te kunnen uitvoeren hebben wij een inspectiedatum
+ingepland op: [strAfspraak] [Format(dteDatum, "dddd dd MMMM yyyy")] om [Format(dtetijd, "HH:mm")] uur.
+Onze inspecteur zal rond dit tijdstip aanwezig zijn bij het monument.
+Wilt u zo vriendelijk zijn deze afspraak te bevestigen door antwoord te geven op deze mail.
+Mocht datum of tijdstip u niet schikken dan vragen wij u vriendelijk om zo spoedig mogelijk contact met ons te willen opnemen voor een nieuwe afspraak.
+Wij zijn op werkdagen tussen 08.00 uur en 17.00 uur telefonisch bereikbaar op nummer
+0411 - 64 33 66.  U kunt ons ook bereiken via ons e-mailadres planning@mwnb.nl .
+Indien bovenstaande gegevens incompleet of incorrect zijn dan verzoeken wij u dit, bij voorkeur per mail, door te geven op ons onderstaand e-mailadres.
+Bij voorbaat dank voor uw medewerking.
+
+Monumentenwacht Noord-Brabant
+Sparrendaalseweg 5
+5262 LR Vught
+T      +31 (0)411 643 366
+E      info@mwnb.nl
+I      www.mwnb.nl
+
+De verzonden informatie is uitsluitend bedoeld voor de persoon of rechtspersoon aan wie deze is geadresseerd en kan vertrouwelijk en/of privacy gevoelige informatie 
+bevatten. Voor elke waarneming, verspreiding, doorzending op enige manier of ander gebruik van -of elke gedraging gebaseerd op- de informatie, 
+door personen of rechtspersonen anders dan de als geadresseerde bedoelde partij, geldt, dat dit is verboden. 
+Als u deze informatie per abuis ontvangt, 
+neemt u dan alstublieft contact op met de verzender ervan en vernietig de informatie van enige computer die tot u ter beschikking staat.
