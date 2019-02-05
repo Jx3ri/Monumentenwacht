@@ -77,7 +77,7 @@ $hour = date('H', time());
         </div>
         <div class="button-container">
             <a href="#" class="btn btn-form btn-5">Bevestigen</a>
-            <a href="#" class="btn btn-form btn-5">Terug</a>
+            <a href="#" class="btn btn-form btn-5" onclick="ConfirmOff()">Terug</a>
         </div>
     </div>
 </div>
