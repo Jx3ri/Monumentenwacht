@@ -69,11 +69,13 @@ $hour = date('H', time());
         <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
         
         <div class="time-container confirm-container">
+        
         <?php
         echo "<span class='confirm-text'>";
         echo "Bent u zeker dat u een afspraak wilt maken met de Monumentenwacht op <span class='red'>".$datum."</span> om <span class='red'>".$tijd."</span> uur?";
         echo "</span>";
         ?>
+
         </div>
         <div class="button-container">
             <a href="#" class="btn btn-form btn-5">Bevestigen</a>
