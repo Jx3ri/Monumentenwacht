@@ -107,10 +107,11 @@ p a:hover {
 }
 
 .confirm-text {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .confirm-container {
+  margin-top: -5%;
   text-align: center;
 }
 
@@ -139,9 +140,12 @@ p a:hover {
 }
 
 .btn-form {
+  display: inline-block;
+  border: 0;
+  background: 0;
   color: #DDCCAA!important;
   width: auto;
-  padding: 0.5em;
+  padding: 0.3em;
   font-size: 14px;
   font-weight: 700!important;
   letter-spacing: 4px;
@@ -192,9 +196,9 @@ p a:hover {
 }
 
 .button-container {
-  margin-top: 2.5%;
+  margin-top: 1%;
+  margin-bottom: 2%;
   width: 100%;
-  position: absolute;
   text-align: center;
 }
 
@@ -313,4 +317,25 @@ img:hover{
   left: 50%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+}
+
+#comment-form {
+  margin-top: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+textarea {
+  border: 0;
+  border: solid 1px #DDCCAA;
+  padding: 2%;
+  font-size: 18px;
+  outline: none;
+  resize: none;
+  width: 60%;
+  height: 200px;
+}
+
+::placeholder {
+  color: #2a2a2a;
 }
