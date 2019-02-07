@@ -76,7 +76,7 @@ $hour = date('H', time());
             <textarea name="comment" id="comment" placeholder="Opmerking.."></textarea>
             <div class="button-container">
                 <a class="btn btn-form btn-5">Bevestigen</a>
-                <a class="btn btn-form btn-5">Terug</a>
+                <a class="btn btn-form btn-5" onclick="ConfirmOff()">Terug</a>
             </div>
         </form>
 
