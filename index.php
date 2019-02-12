@@ -76,7 +76,6 @@ $hour = date('H', time());
             <textarea name="comment" id="comment" placeholder="Opmerking.."></textarea>
             <div class="button-container">
                 <a class="btn btn-form btn-5">Bevestigen</a>
-                <a class="btn btn-form btn-5" onclick="ConfirmOff()">Terug</a>
             </div>
         </form>
 
@@ -87,12 +86,17 @@ $hour = date('H', time());
     <div id="overlay-container">
         <i class="fas fa-times popup-close" onclick="VoorstelOff()"></i>
         <a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a>
-        <form class="form-date" action="submit.php">
-            <label for="NieuweDatum">Datum die jij voorstelt:</label>
-            <input type="text" name="NieuweDatum" id="datepicker" placeholder='Datum'>
-            <label for="NieuweTijd">Tijdstip dat jij voorstelt:</label>
-            <input type="text" name="NieuweTijd" class='timepicker' id="NieuweTijd" placeholder='Tijd'>
-            <a href="#" class="btn btn-form btn-5">Voorstellen</a>
+         
+        <div class="time-container confirm-container">
+            <span class='confirm-text'>Laat ons weten welke datum u dan wel uitkomt.</span>
+        </div>
+
+        <form action="#sent.php" method="post" id="comment-form">
+            <!-- Textbox cannot be empty -->
+            <textarea name="comment" id="comment" placeholder="Opmerking.."></textarea>
+            <div class="button-container">
+                <a class="btn btn-form btn-5">Voorstellen</a>
+            </div>
         </form>
     </div>
         
