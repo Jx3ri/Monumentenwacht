@@ -106,7 +106,7 @@ p a:hover {
   color: #E1332D;
 }
 
-.confirm-text {
+.confirm-text { 
   font-size: 32px;
 }
 
@@ -307,10 +307,6 @@ img:hover{
   font-size: 36px;
 }
 
-.popup-close:hover {
-  transform: rotate(180deg);
-}
-
 .popup-logo-center {
   position: absolute;
   top: 50%;
@@ -327,7 +323,7 @@ img:hover{
 
 textarea {
   border: 0;
-  border: solid 1px #DDCCAA;
+  border: solid 1px rgba(0,0,0,0.12);
   padding: 2%;
   font-size: 18px;
   outline: none;
