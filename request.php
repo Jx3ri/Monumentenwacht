@@ -2,27 +2,13 @@
 session_start();
 include "db_connect.php";
 
-
-$a = $_SESSION['ID'];
-$b = $_POST['KamerID'];
-$c = $_POST['from'];
-$d = $_POST['to'];
-
-$van=date_create($c);
-$vanb=date_format($van,"Y-m-d");
-
-$tot=date_create($d);
-$totb=date_format($tot,"Y-m-d");
-
-$data = [
-    'persid' => $_SESSION['ID'],
-    'kamerid' => $b,
-];
+$objectid = 1034;
+$opmerking = $_POST['request'];
+$antwoord = 5;
 
 
-$sql = "INSERT INTO tblboekingen (fldPersonenID, fldKamerID, fldStartDatum, fldEindDatum) VALUES (:persid, :kamerid, '$vanb', '$totb')";
+$sql = "INSERT INTO tblplanningantwoord (Objectid, Opmerkingklant, fldPlanningStatusID) VALUES (?,?,?)";
 $stmt= $conn->prepare($sql);
-$stmt->execute($data);
-header("location:\hotel\index.php");
-
-?>  
+$stmt->execute([$objectid, $opmerking, $antwoord]);
+header("Location: index.php");
+?>
