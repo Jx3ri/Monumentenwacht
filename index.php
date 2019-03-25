@@ -57,7 +57,7 @@ $hour = date('H', time());
 ?>
 
 </form>
-    <textarea name="comment" id="comment" placeholder="Opmerking.."></textarea>
+    <textarea name="comment" id="comment" placeholder="Laat een opmerking achter over uw monument.."></textarea>
     <div class="button-container">
         <a href="#" class="btn btn-5" onclick="ConfirmOn()">Verzenden</a>
         <!--<a href="#" class="btn btn-5" onclick="ConfirmOn()">Ja</a>
