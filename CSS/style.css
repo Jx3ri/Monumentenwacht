@@ -97,7 +97,7 @@ p a:hover {
   margin: 0 0 2em;
   position: relative;
   text-decoration: none;
-  padding: 1.1em;
+  padding: 0.8em;
   width: 100%;
   font-family: 'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif!important;
   font-weight: 700!important;
@@ -164,8 +164,6 @@ p a:hover {
 }
 
 .logo-container {
-  margin-top: 2%;
-  margin-bottom: 1%;
   width: 100%;
   position: relative;
 }
@@ -312,7 +310,7 @@ textarea {
   .btn {
     font-size: 16px;
     margin: 0 0 1em;
-    padding: 0.6em;
+    padding: 0.4em;
   }
   .logo-popup {
     width: 40%;
@@ -354,7 +352,7 @@ textarea {
   .btn {
     font-size: 18px;
     margin: 0 0 1em;
-    padding: 0.8em;
+    padding: 1.1em;
   }
   .btn-form {
     font-size: 14px;
