@@ -2,9 +2,9 @@
 session_start();
 include "db_connect.php";
 
-$objectid = 1034;
-$opmerking = $_POST['comment'];
-$antwoord = 3;
+$objectid = $_SESSION['objectid'];
+$diensid= $_SESSION['dienstid'];
+$datum = $_SESSION['datum'];
 
 
 $sql = "INSERT INTO tblplanningantwoord (Objectid, Opmerkingklant, fldPlanningStatusID) VALUES (?,?,?)";
