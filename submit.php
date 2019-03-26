@@ -6,7 +6,7 @@ $objectid = $_SESSION['objectid'];
 $dienstid= $_SESSION['dienstid'];
 $datum = $_SESSION['datum'];
 $tijd = $_SESSION['tijd'];
-$opmerking = $_GET['comment'];
+$opmerking = $_POST['comment'];
 
 
 $sql = "INSERT INTO tblplanningantwoord(fldObjectID, fldDienstID, fldDatum, fldTijd, fldOpmerking) VALUES (?,?,?,?,?)";
