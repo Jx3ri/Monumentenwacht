@@ -3,12 +3,14 @@ session_start();
 include "db_connect.php";
 
 $objectid = $_SESSION['objectid'];
-$diensid= $_SESSION['dienstid'];
+$dienstid= $_SESSION['dienstid'];
 $datum = $_SESSION['datum'];
+$tijd = $_SESSION['tijd'];
+$opmerking = $_GET['comment'];
 
 
-$sql = "INSERT INTO tblplanningantwoord (Objectid, Opmerkingklant, fldPlanningStatusID) VALUES (?,?,?)";
+$sql = "INSERT INTO tblplanningantwoord(fldObjectID, fldDienstID, fldDatum, fldTijd, fldOpmerking) VALUES (?,?,?,?,?)";
 $stmt= $conn->prepare($sql);
-$stmt->execute([$objectid, $opmerking, $antwoord]);
-header("Location: index.php");
+$stmt->execute([$objectid, $dienstid, $datum, $tijd, $opmerking]);
+header("Location: confirmed.php");
 ?>

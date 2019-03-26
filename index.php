@@ -3,7 +3,10 @@ session_start();
  if (isset($_GET['OI']) && isset($_GET['DI']) && isset($_GET['DT'])){
         $_SESSION['objectid'] = $_GET['OI'];
         $_SESSION['dienstid'] = $_GET['DI'];
-        $_SESSION['datum'] = $_GET['DT'];
+        $DatumTijd = $_GET['DT'];
+        $DatumTijdArray = explode ("_", $DatumTijd);
+        $_SESSION['datum'] = $DatumTijdArray[0];
+        $_SESSION['tijd'] = $DatumTijdArray[1];
         header('Location: '.$_SERVER['PHP_SELF']);
     }
 ?>
