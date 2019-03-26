@@ -3,6 +3,7 @@ session_start();
  if (isset($_GET['OI']) && isset($_GET['DI']) && isset($_GET['DT'])){
         $_SESSION['objectid'] = $_GET['OI'];
         $_SESSION['dienstid'] = $_GET['DI'];
+        $_SESSION['monumentlocatie'] = $_GET['LC'];
         $DatumTijd = $_GET['DT'];
         $DatumTijdArray = explode ("_", $DatumTijd);
         $_SESSION['datum'] = $DatumTijdArray[0];
@@ -39,7 +40,7 @@ session_start();
 <div class="logo-container"><a href="https://mwnb.nl/"><img class='logo' src="Images\Monumentenwacht_NB_logo_DEF-400x250.png" alt="Logo monumentenwacht"></a></div>
 
 <div class="time-container">
-<?php
+<?php /*
 
 date_default_timezone_set('Europe/Amsterdam');
 $hour = date('H', time());
@@ -49,23 +50,27 @@ $hour = date('H', time());
     $tijd = date("m");
 
     if ($hour < "12") {
-        echo "<h1>Goedemorgen</h1>";
+        echo "<h1>Goedemorgen,</h1>";
     } else
 
     if ($hour >= "12" && $hour < "17") {
-        echo "<h1>Prettige namiddag</h1>";
+        echo "<h1>Prettige namiddag,</h1>";
     } else
 
     if ($hour >= "17" && $hour >= "19") {
-        echo "<h1>Goedenavond</h1>";
+        echo "<h1>Goedenavond,</h1>";
     }
-    
+  */  
+?>
+
+<?php
+echo "<h1>Wij zouden een inspectie willen inplannen op <span style='color:#e02b20'>".$_SESSION['datum']."</span> om <span style='color:#e02b20'>".$_SESSION['tijd']."</span> uur te <span style='color:#e02b20'>". $_SESSION['monumentlocatie'] ."</span></h1>";
 ?>
 
 <form method="POST" action="submit.php" name="comment-form" id="comment-form">
-    <textarea name="comment" id="comment" placeholder="Laat nog een opmerking achter over uw monument.."></textarea>
+    <textarea name="comment" id="comment" placeholder="Laat eventueel nog een opmerking achter..."></textarea>
     <div class="button-container">
-        <a href="#" class="btn btn-5" onclick="document.getElementById('comment-form').submit()">Inspectie inplannen</a>
+        <a href="#" class="btn btn-5" onclick="document.getElementById('comment-form').submit()">Inplannen</a>
         <!--<a href="#" class="btn btn-5" onclick="ConfirmOn()">Ja</a>
          <a href="#" class="btn btn-5" onclick="VoorstelOn()">Nee</a> -->
     </div>
