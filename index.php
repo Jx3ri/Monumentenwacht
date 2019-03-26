@@ -3,7 +3,10 @@ session_start();
  if (isset($_GET['OI']) && isset($_GET['DI']) && isset($_GET['DT'])){
         $_SESSION['objectid'] = $_GET['OI'];
         $_SESSION['dienstid'] = $_GET['DI'];
-        $_SESSION['datum'] = $_GET['DT'];
+        $DatumTijd = $_GET['DT'];
+        $DatumTijdArray = explode ("_", $DatumTijd);
+        $_SESSION['datum'] = $DatumTijdArray[0];
+        $_SESSION['tijd'] = $DatumTijdArray[1];
         header('Location: '.$_SERVER['PHP_SELF']);
     }
 ?>
@@ -59,7 +62,7 @@ $hour = date('H', time());
     
 ?>
 
-</form>
+</form method="POST" action="submit.php">
     <textarea name="comment" id="comment" placeholder="Laat nog een opmerking achter over uw monument.."></textarea>
     <div class="button-container">
         <a href="#" class="btn btn-5" onclick="document.getElementById('comment-form').submit()">Verzenden</a>
