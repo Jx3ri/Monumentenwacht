@@ -1,7 +1,10 @@
 <?php
- if (isset($_GET['id']) && isset($_GET['datum']) && isset($_GET['tijd'])){
-    $datum = $_GET['datum'];
-    $tijd = $_GET['tijd'];
+session_start();
+ if (isset($_GET['OI']) && isset($_GET['DI']) && isset($_GET['DT'])){
+        $_SESSION['objectid'] = $_GET['OI'];
+        $_SESSION['dienstid'] = $_GET['DI'];
+        $_SESSION['datum'] = $_GET['DT'];
+        header('Location: '.$_SERVER['PHP_SELF']);
     }
 ?>
 <!DOCTYPE html>
