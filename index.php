@@ -64,13 +64,13 @@ $hour = date('H', time());
 ?>
 
 <?php
-echo "<h1>Wij zouden een inspectie willen inplannen op <span style='color:#e02b20'>".$_SESSION['datum']."</span> om <span style='color:#e02b20'>".$_SESSION['tijd']."</span> uur te <span style='color:#e02b20'>". $_SESSION['monumentlocatie'] ."</span></h1>";
+echo "<h1>De inspectie van uw monument te <span style='text-decoration:underline;text-decoration-color:#DDCCAA'>".$_SESSION['monumentlocatie']."</span> inplannen op  <span style='text-decoration:underline;text-decoration-color:#DDCCAA'>".$_SESSION['datum']."</span> om <span style='text-decoration:underline;text-decoration-color:#DDCCAA'>". $_SESSION['tijd'] ."</span></h1>";
 ?>
 
 <form method="POST" action="submit.php" name="comment-form" id="comment-form">
     <textarea name="comment" id="comment" placeholder="Laat eventueel nog een opmerking achter..."></textarea>
     <div class="button-container">
-        <a href="#" class="btn btn-5" onclick="document.getElementById('comment-form').submit()">Inplannen</a>
+        <a href="#" class="btn btn-5" onclick="document.getElementById('comment-form').submit()">Bevestigen</a>
         <!--<a href="#" class="btn btn-5" onclick="ConfirmOn()">Ja</a>
          <a href="#" class="btn btn-5" onclick="VoorstelOn()">Nee</a> -->
     </div>
