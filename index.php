@@ -1,8 +1,9 @@
 <?php
 session_start();
- if (isset($_GET['OI']) && isset($_GET['DI']) && isset($_GET['DT'])){
+ if (isset($_GET['OI']) && isset($_GET['DI']) && isset($_GET['DT'])  && isset($_GET['PI'])){
         $_SESSION['objectid'] = $_GET['OI'];
         $_SESSION['dienstid'] = $_GET['DI'];
+        $_SESSION['planningid'] = $_GET['PI'];
         $_SESSION['monumentlocatie'] = $_GET['LC'];
         $DatumTijd = $_GET['DT'];
         $DatumTijdArray = explode ("_", $DatumTijd);
