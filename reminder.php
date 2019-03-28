@@ -14,11 +14,16 @@ $result=$query->fetchAll(PDO::FETCH_ASSOC);
 foreach($result as &$data){
     $TijdstipGecontacteerd = $data['fldTijdstipGecontacteerd'];
     $ReminderTijdstip = date('Y-m-d', strtotime($TijdstipGecontacteerd. ' + 4 days'));
-    echo "<br>";
-    echo $TijdstipGecontacteerd;
-    echo "<br>";
-    echo $ReminderTijdstip;
+    
+    $datetime1 = new DateTime($datum);
+    $datetime2 = new DateTime($ReminderTijdstip);
+    $interval = $datetime1->diff($datetime2);
+    $DateDifference = $interval->format('%a');
+    echo $DateDifference;
 
+    if ($DateDifference = 0) {
+        
+    }
 }
 */
 
@@ -160,8 +165,4 @@ div.WordSection1
 </html>
 ";
 
-$headers[] = 'MIME-Version: 1.0';
-$headers[] = 'Content-type: text/html; charset=iso-8859-1';
-
-mail($to, $subject, $message, implode("\r\n", $headers));
 ?>
