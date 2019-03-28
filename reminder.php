@@ -23,7 +23,7 @@ foreach($result as &$data){
 
     if ($DateDifference = 0) {
 
-        $to = "mikevc@live.be, jv120501@stud.miniemeninstituut.be";
+        $to = $data['fldEmail'];
         $subject = "Reminder Inspectie";
         $message = "
         <html xmlns:v='urn:schemas-microsoft-com:vml' xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns:m='http://schemas.microsoft.com/office/2004/12/omml' xmlns='http://www.w3.org/TR/REC-html40'><head>
@@ -92,7 +92,7 @@ foreach($result as &$data){
         </head>
         <body lang='NL-BE' link='#0563C1' vlink='#954F72'>
         <div class='WordSection1'>
-        <p class='clr-red' style='margin:0cm;margin-bottom:.0001pt'><span lang='EN-US' style='font-size:18.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#E30033'>Herinnering bouwkundige inspectie<o:p></o:p></span></p>
+        <p class='clr-red' style='margin:0cm;margin-bottom:.0001pt'><span lang='EN-US' style='font-size:18.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#E30033'>Herinnering inspectie<o:p></o:p></span></p>
         <table class='MsoNormalTable' border='0' cellspacing='3' cellpadding='0' width='100%' style='width:100.0%'>
         <tbody>
         <tr>
