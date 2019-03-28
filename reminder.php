@@ -19,8 +19,8 @@ foreach($result as &$data){
     echo $TijdstipGecontacteerd;
     echo "<br>";
     echo $ReminderTijdstip;
-
+    echo "<br>";
+    echo "Dit is gemaakt door Joeri Veugelen, Mike heeft niks gedaan";  
 }
-
 
 ?>
