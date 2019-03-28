@@ -1,5 +1,5 @@
 <?php
-/* include('db_connect.php');
+include('db_connect.php');
 date_default_timezone_set('Europe/Amsterdam');
 $datum = date("Y/m/d");
 
@@ -25,7 +25,6 @@ foreach($result as &$data){
         
     }
 }
-*/
 
 
 $to = "mikevc@live.be";
