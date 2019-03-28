@@ -28,8 +28,8 @@ foreach($result as &$data){
 */
 
 
-$to = "mikevc@live.be";
-$subject = "jv120501@stud.miniemeninstituut.be";
+$to = "mikevc@live.be, jv120501@stud.miniemeninstituut.be";
+$subject = "test reminder";
 $message = "
 <html xmlns:v='urn:schemas-microsoft-com:vml' xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns:m='http://schemas.microsoft.com/office/2004/12/omml' xmlns='http://www.w3.org/TR/REC-html40'><head>
 <meta http-equiv='Content-Type' content='text/html; charset=us-ascii'>
@@ -164,5 +164,10 @@ div.WordSection1
 </body>
 </html>
 ";
+
+$headers[] = 'MIME-Version: 1.0';
+$headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+mail($to, $subject, $message, implode("\r\n", $headers));
 
 ?>
