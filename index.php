@@ -11,6 +11,9 @@ session_start();
         $_SESSION['tijd'] = $DatumTijdArray[1];
         header('Location: '.$_SERVER['PHP_SELF']);
     }
+ elseif(!isset($_SESSION['planningid'])){
+        header( "Location: error.php" );
+ }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +21,8 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Afspraak maken | Noord-Brabant</title>
+    <title>Inspectie Bevestigen | Noord-Brabant</title>
+    <link rel="shortcut icon" type="image/png" href="https://mwnb.nl/wp-content/uploads/2018/08/cropped-Monumentenwacht_NB_icon_DEF_transparant-32x32.png"/>
     <link rel="stylesheet" href="CSS\style.css">
     <link rel="stylesheet" href="CSS\formstyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext">
@@ -71,7 +75,7 @@ echo "<h1>De inspectie van uw monument te <span style='text-decoration:underline
 <form method="POST" action="submit.php" name="comment-form" id="comment-form">
     <textarea name="comment" id="comment" placeholder="Laat eventueel nog een opmerking achter..."></textarea>
     <div class="button-container">
-        <a href="#" class="btn btn-5" onclick="document.getElementById('comment-form').submit()">Bevestigen</a>
+        <a href="#" class="btn btn-5" onclick="document.getElementById('comment-form').submit()">Bevestig</a>
         <!--<a href="#" class="btn btn-5" onclick="ConfirmOn()">Ja</a>
          <a href="#" class="btn btn-5" onclick="VoorstelOn()">Nee</a> -->
     </div>
