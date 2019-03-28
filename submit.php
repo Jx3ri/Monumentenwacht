@@ -9,8 +9,8 @@ $tijd = $_SESSION['tijd'];
 $opmerking = $_POST['comment'];
 
 
-$sql = "INSERT INTO tblplanningantwoord(fldObjectID, fldDienstID, fldDatum, fldTijd, fldOpmerking) VALUES (?,?,?,?,?)";
+$sql = "UPDATE tblplanningantwoord SET fldPlanningStatusID=3,fldOpmerking='$opmerking',fldGeantwoord=1 WHERE fldPlanningAntwoordID=".$_SESSION['planningid'];
 $stmt= $conn->prepare($sql);
-$stmt->execute([$objectid, $dienstid, $datum, $tijd, $opmerking]);
+$stmt->execute();
 header("Location: confirmed.php");
 ?>
