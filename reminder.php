@@ -21,7 +21,7 @@ foreach($result as &$data){
     $DateDifference = $interval->format('%a');
     echo $DateDifference;
 
-    if ($DateDifference == 0) {
+    if ($DateDifference == 0 && $data['fldGeantwoord'] == 0) {
         echo $data['fldEmail'];
         $to = $data['fldEmail'];
         $subject = "Reminder Inspectie";
