@@ -21,11 +21,7 @@ foreach($result as &$data){
     $DateDifference = $interval->format('%a');
     echo $DateDifference;
 
-<<<<<<< HEAD
-    if ($DateDifference == 0) {
-=======
     if ($DateDifference == 0 && $data['fldGeantwoord'] == 0) {
->>>>>>> 139dca0e64b935447a62e8f69537f2b37851b455
         echo $data['fldEmail'];
         $to = $data['fldEmail'];
         $subject = "Reminder Inspectie";
@@ -166,6 +162,9 @@ foreach($result as &$data){
         
         $headers[] = 'MIME-Version: 1.0';
         $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+        $headers[] = 'From: planning@mwnb.nl';
+        $headers[] = 'Cc: mikevc@live.be';
         
         mail($to, $subject, $message, implode("\r\n", $headers));
                 
